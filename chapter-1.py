@@ -1,6 +1,13 @@
 import time
 import sys
 
+def print_fast(str):
+    for letter in str:
+        sleep=0.001
+        sys.stdout.write(letter)
+        sys.stdout.flush()
+        time.sleep(sleep)
+
 def print_slow(str):
     
     for letter in str:
@@ -11,11 +18,18 @@ def print_slow(str):
             sys.stdout.write(letter)
             sys.stdout.flush()
         time.sleep(sleep)
-print('Hi')
-print_slow("Hi this is the testing string")
 
+title='''
+ _____  _____  ______    ______  ______     ___      ____  _____ _____  _____                  _____ _____              ____         _____          _____   _ 
+|       |        |       |         |        | |     |    |   |   |     |     |     |         |   |     |   |     |     |    | |    |   |   |     | |     | | |    | 
+|  ___  |___     |       |_____    |      |  _  |   |____|   |   |___  |     |      |   _   |    |     |   |_____|     |____|  |  |    |   |_____| |     | |  |   | 
+|     | |        |             |   |     |  | |  |  | |      |   |     |     |       | | | |     |     |   |     |     |        ||     |   |     | |     | |   |  | 
+|_____| |____    |       ______|   |    |___| |___| |  |     |   |____ |____/         || ||    __|__   |   |     |     |        ||     |   |     | |_____| |    |_| 
+ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
+'''
 para1='''
+****
 Hello Everyone, in today’s class we are going to talk about what the Python is? Basically, in today's class we get the basic idea of what is Programming Language, Syntax, Semantics, Python and its scope and usage.
 So without wasting your much time in introduction, let's get started with today's interation.
 *
@@ -97,7 +111,7 @@ Rules for writing identifiers
 *
 
 '''
-
+print_fast(title)
 print_slow(para1)
 print_slow(para2)
 print_slow(para3)
